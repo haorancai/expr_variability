@@ -65,8 +65,7 @@ scale_colour_Publication <- function(...){
 
 
 # load data -----------------------------------------------------------
-# Set working directory to script location (run from RStudio or source with chdir=TRUE)
-setwd(dirname(rstudioapi::getSourceEditorContext()$path))
+# Data files are in the 'data' subfolder
 
 load('data/plasticity.rdata')
 All_genes_corrected_CV2_table <- read_csv("data/All_genes_corrected_CV2_table.csv")
